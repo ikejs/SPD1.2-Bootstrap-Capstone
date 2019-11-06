@@ -1,3 +1,8 @@
+#userNav  {
+    height: 45rem;
+    overflow:hidden;
+}
+
 .profile-image{
     width: 60px;
     height: 60px;
@@ -6,6 +11,7 @@
     -moz-border-radius: 60px;
     -moz-background-clip: padding;
     border-radius: 60px;
+    border: 3px solid white;
     background-clip: padding-box;
     float: left;
     background-size: cover;
@@ -19,16 +25,85 @@
     background-color: #EEE;
     height: 10px;
     width: 10px;
+    align-self: flex-start;
 }
 
-.status-dot-success {
-    background-color: #449D44;
+.online {
+    background-color: #77B302;
+    border-color: #77B302;
 }
 
-.status-dot-warning {
-    background-color: #F0AD4E;
+.away {
+    background-color: #F88801;
+    border-color: #F88801;
 }
 
-.status-dot-danger {
-    background-color: #D9534F;
+.dnd {
+    background-color: #CC1100;
+    border-color: #CC1100;
+}
+
+.offline {
+    background-color: #ADB0AF;
+    border-color: #ADB0AF;
+}
+
+.card-header {
+    background-color: #555555;
+    color: white;
+}
+
+.profile-info {
+    color: #A9A9A9 !important;
+}
+
+#users {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#users .list-group-item-contact-details {
+    height:4em;
+    overflow: hidden;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+#users .list-group-item small {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#messagesWrapper  {
+    height: 45rem;
+    overflow:hidden;
+}
+
+#messagesWrapper .card-header {
+    font-size: 1.5em;
+}
+
+#messagesWrapper .card {
+    border-radius: 1em;
+}
+
+#messageInput textarea {
+    resize: none;
+    background-color: #060606;
+    color: white;
+    font-size: 1.3em;
+}
+
+#messageInput button, #messageInput textarea {
+    border: none;
+    border-radius: 0;
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+
+}
+
+#messageInput button {
+    font-size: 2em;
 }
